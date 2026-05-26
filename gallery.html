@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./styles/gallery-style.css" />
+    <script
+      src="https://kit.fontawesome.com/6b219ab309.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="shortcut icon"
+      href="./images/FHCC LOGO NO BKG.webp"
+      type="image/x-icon"
+    />
+    <title>Gallery - Flower House Creche Care</title>
+    
+  </head>
+  <body>
+    <!------------------ NAVIGATION BAR -------------------->
+    <section class="header">
+      <div class="navbar">
+        <div class="nav-logo">
+          <a href="index.html"><img src="./images/logo.webp" alt="logo" /></a>
+        </div>
+        <div class="nav-title">FLOWER HOUSE <br />CRECHE CARE</div>
+        <nav class="nav-menu" id="navLinks">
+          <i class="menu-icon fas fa-times d-md-none" onclick="hideMenu()"></i>
+          <ul>
+            <li>
+              <a href="index.html">
+                <div class="nav-icon">
+                  <i class="fas fa-home"></i>
+                </div>
+                <div class="nav-name">Home</div>
+              </a>
+            </li>
+            <li>
+              <a href="services.html">
+                <div class="nav-icon">
+                  <i class="fas fa-cogs"></i>
+                </div>
+                <div class="nav-name">Services</div>
+              </a>
+            </li>
+            <li>
+              <a href="gallery.html">
+                <div class="nav-icon">
+                  <i class="fas fa-images"></i>
+                </div>
+                <div class="nav-name">Gallery</div>
+              </a>
+            </li>
+            <li>
+              <a href="about.html">
+                <div class="nav-icon">
+                  <i class="fas fa-info-circle"></i>
+                </div>
+                <div class="nav-name">About</div>
+              </a>
+            </li>
+            <li>
+              <a href="contact.html">
+                <div class="nav-icon">
+                  <i class="fas fa-envelope-open-text"></i>
+                </div>
+                <div class="nav-name">Contact</div>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <i class="menu-icon d-md-none fas fa-bars" onclick="showMenu()"
+          ><p>MENU</p></i
+        >
+      </div>
+    </section>
+
+    <main>
+      <div class="sub-header gallery-header">
+        <h1>
+          OUR <br />
+          GALLERY
+        </h1>
+      </div>
+
+
+    <div class="filter-buttons">
+      <div class="category-select">
+        <label for="category-select">Select a category:</label>
+        <select id="category-select">
+          <option value="creativeArts">Creative Arts</option>
+          <option value="gamesSports">Games and Sports</option>
+          <option value="obstacleCourse">Obstacle Course</option>
+          <option value="funLearning">Fun Learning</option>
+          <option value="natureExploration">Nature Exploration</option>
+          <option value="easterEggHunt">Easter Egg Hunt</option>
+          <option value="valentinesDay">Valentines' Day</option>
+        </select>
+      </div>
+      <div class="category-buttons">
+        <button class="gallery-btn active" data-group="creativeArts">Creative Arts</button>
+        <button class="gallery-btn" data-group="gamesSports">Games and Sports</button>
+        <button class="gallery-btn" data-group="obstacleCourse">Obstacle Course</button>
+        <button class="gallery-btn" data-group="funLearning">Fun Learning</button>
+        <button class="gallery-btn" data-group="natureExploration">
+        Nature Exploration
+        </button>
+        <button class="gallery-btn" data-group="easterEggHunt">Easter Egg Hunt</button>
+        <button class="gallery-btn" data-group="valentinesDay">Valentines' Day</button>
+        
+      </div>
+    </div>
+    
+    
+    <div class="gallery">
+      <div class="gallery-item" data-groups='["creativeArts"]'>
+        <div class="gallery-container">
+          <div class="gallery-box">
+            <div class="gallery-img">
+              <a href="./images/cra1.webp">
+                <img
+                  src="./images/cra1.webp"
+                  alt="gallery-image"
+                  width="300px" height="220px"
+                />
+              </a>
+              <div class="desc">Paper mache activity</div>
+            </div>
+          </div>
+          <div class="gallery-box">
+            <div class="gallery-img">
+              <a href="./images/cra2.webp">
+                <img
+                  src="./images/cra2.webp"
+                  alt="gallery-image"
+                  width="300px" height="220px"
+                />
+              </a>
+              <div class="desc">A nice hat made from newspapers</div>
+            </div>
+          </div>
+          <div class="gallery-box">
+            <div class="gallery-img">
+              <a href="./images/cra3.webp">
+                <img
+                  src="./images/cra3.webp"
+                  alt="gallery-image"
+                  width="300px" height="220px" class="lazy-load-image"
+                />
+              </a>
+              <div class="desc">Some clay work</div>
+            </div>
+          </div>
+          <div class="gallery-box">
+            <div class="gallery-img">
+              <a href="./images/cra4.webp">
+                <img
+                  src="./images/cra4.webp"
+                  alt="gallery-image"
+                  width="300px" height="220px" class="lazy-load-image"
+                />
+              </a>
+              <div class="desc">Block building</div>
+            </div>
+          </div>
+          <div class="gallery-box">
+            <div class="gallery-img">
+              <a href="./images/cra5.webp">
+                <img
+                  src="./images/cra5.webp"
+                  alt="gallery-image"
+                  width="300px" height="220px" class="lazy-load-image"
+                />
+              </a>
+              <div class="desc">Block building</div>
+            </div>
+          </div>
+          <div class="gallery-box">
+            <div class="gallery-img">
+              <a href="./images/cra6.webp">
+                <img
+                  src="./images/cra6.webp"
+                  alt="gallery-image"
+                  width="300px" height="220px" class="lazy-load-image"
+                />
+              </a>
+              <div class="desc">Lego building</div>
+            </div>
+          </div>
+          <div class="gallery-box">
+            <div class="gallery-img">
+              <a href="./images/cra7.webp">
+                <img
+                  src="./images/cra7.webp"
+                  alt="gallery-image"
+                  width="300px" height="220px" class="lazy-load-image"
+                />
+              </a>
+              <div class="desc">A beautifully made magazine outfit</div>
+            </div>
+          </div>
+          <div class="gallery-box">
+            <div class="gallery-img">
+              <a href="./images/cra8.webp">
+                <img
+                  src="./images/cra8.webp"
+                  alt="gallery-image"
+                  width="300px" height="220px" class="lazy-load-image"
+                />
+              </a>
+              <div class="desc">Painting exercise</div>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+      <div class="gallery-item" data-groups='["gamesSports"]'>
+        <div class="gallery-container">
+          <div class="gallery-box">
+            <div class="gallery-img">
+              <a href="./images/gas1.webp">
+                <img
+                  src="./images/gas1.webp"
+                  alt="gallery-image"
+                  width="300px" height="220px" class="lazy-load-image"
+                />
+              </a>
+              <div class="desc">Who gets the ball first?</div>
+            </div>
+          </div>
+          <div class="gallery-box">
+            <div class="gallery-img">
+              <a href="./images/gas2.webp">
+                <img
+                  src="./images/gas2.webp"
+                  alt="gallery-image"
+                  width="300px" height="220px" class="lazy-load-image"
+                />
+              </a>
+              <div class="desc">Basketball</div>
+            </div>
+          </div>
+          <div class="gallery-box">
+            <div class="gallery-img">
+              <a href="./images/gas3.webp">
+                <img
+                  src="./images/gas3.webp"
+                  alt="gallery-image"
+                  width="300px" height="220px" class="lazy-load-image"                
+                />
+              </a>
+              <div class="desc">Who fills his cup first?</div>
+            </div>
+          </div>
+          <div class="gallery-box">
+            <div class="gallery-img">
+              <a href="./images/gas4.webp">
+                <img
+                  src="./images/gas4.webp"
+                  alt="gallery-image"
+                  width="300px" height="220px" class="lazy-load-image"                  
+                />
+              </a>
+              <div class="desc">Down the slide</div>
+            </div>
+          </div>
+          <div class="gallery-box">
+            <div class="gallery-img">
+              <a href="./images/gas5.webp">
+                <img
+                  src="./images/gas5.webp"
+                  alt="gallery-image"
+                  width="300px" height="220px" class="lazy-load-image"  
+                />
+              </a>
+              <div class="desc">Blindfolded search game</div>
+            </div>
+          </div>
+          <div class="gallery-box">
+            <div class="gallery-img">
+              <a href="./images/gas6.webp">
+                <img
+                  src="./images/gas6.webp"
+                  alt="gallery-image"
+                  width="300px" height="220px" class="lazy-load-image"
+                />
+              </a>
+              <div class="desc">Merry-go-round</div>
+            </div>
+          </div>
+          <div class="gallery-box">
+            <div class="gallery-img">
+              <a href="./images/gas7.webp">
+                <img
+                  src="./images/gas7.webp"
+                  alt="gallery-image"
+                  width="300px" height="220px" class="lazy-load-image"
+                />
+              </a>
+              <div class="desc">A game of table tennis</div>
+            </div>
+          </div>
+          <div class="gallery-box">
+            <div class="gallery-img">
+              <a href="./images/gas8.webp">
+                <img
+                  src="./images/gas8.webp"
+                  alt="gallery-image"
+                  width="300px" height="220px" class="lazy-load-image"
+                />
+              </a>
+              <div class="desc">Let's go bowling!</div>
+            </div>
+          </div>
+          <div class="gallery-box">
+            <div class="gallery-img">
+              <a href="./images/gas9.webp">
+                <img
+                  src="./images/gas9.webp"
+                  alt="gallery-image"
+                  width="300px" height="220px" class="lazy-load-image"
+                  
+                />
+              </a>
+              <div class="desc">Egg and spoon. Try not to drop the egg</div>
+            </div>
+          </div>
+          <div class="gallery-box">
+            <div class="gallery-img">
+              <a href="./images/gas10.webp">
+                <img
+                  src="./images/gas10.webp"
+                  alt="gallery-image"
+                  width="300px" height="220px" class="lazy-load-image"
+                  
+                />
+              </a>
+              <div class="desc">Fun on bicycles</div>
+            </div>
+          </div>
+          <div class="gallery-box">
+            <div class="gallery-img">
+              <a href="./images/gas11.webp">
+                <img
+                  src="./images/gas11.webp"
+                  alt="gallery-image"
+                  width="300px" height="220px" class="lazy-load-image"
+                  
+                />
+              </a>
+              <div class="desc">See Saw</div>
+            </div>
+          </div>
+          <div class="gallery-box">
+            <div class="gallery-img">
+              <a href="./images/gas12.webp">
+                <img
+                  src="./images/gas12.webp"
+                  alt="gallery-image"
+                  width="300px" height="220px" class="lazy-load-image"
+                  
+                />
+              </a>
+              <div class="desc">Some sand play</div>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+      <div class="gallery-item" data-groups='["obstacleCourse"]'>
+        <div class="gallery-container">
+          <div class="gallery-box">
+            <div class="gallery-img">
+              <a href="./images/obs5.webp">
+                <img
+                  src="./images/obs5.webp"
+                  alt="gallery-image"
+                  width="300px" height="220px" class="lazy-load-image"
+                  
+                />
+              </a>
+              <div class="desc">Obstacle 1: Jug fill</div>
+            </div>
+          </div>
+          <div class="gallery-box">
+            <div class="gallery-img">
+              <a href="./images/obs6.webp">
+                <img
+                  src="./images/obs6.webp"
+                  alt="gallery-image"
+                  width="300px" height="220px" class="lazy-load-image"
+                  
+                />
+              </a>
+              <div class="desc">Obstacle 2: Hop through the ropes</div>
+            </div>
+          </div>
+          <div class="gallery-box">
+            <div class="gallery-img">
+              <a href="./images/obs7.webp">
+                <img
+                  src="./images/obs7.webp"
+                  alt="gallery-image"
+                  width="300px" height="220px" class="lazy-load-image"
+                  
+                />
+              </a>
+              <div class="desc">Obstacle 3: Toss the ball in</div>
+            </div>
+          </div>
+          <div class="gallery-box">
+            <div class="gallery-img">
+              <a href="./images/obs1.webp">
+                <img
+                  src="./images/obs1.webp"
+                  alt="gallery-image"
+                  width="300px" height="220px" class="lazy-load-image"
+                  
+                />
+              </a>
+              <div class="desc">Obstacle 4: Burst the balloon</div>
+            </div>
+          </div>
+          <div class="gallery-box">
+            <div class="gallery-img">
+              <a href="./images/obs2.webp">
+                <img
+                  src="./images/obs2.webp"
+                  alt="gallery-image"
+                  width="300px" height="220px" class="lazy-load-image"
+                  
+                />
+              </a>
+              <div class="desc">Obstacle 5: Spell your name</div>
+            </div>
+          </div>
+          <div class="gallery-box">
+            <div class="gallery-img">
+              <a href="./images/obs3.webp">
+                <img
+                  src="./images/obs3.webp"
+                  alt="gallery-image"
+                  width="300px" height="220px" class="lazy-load-image"
+                  
+                />
+              </a>
+              <div class="desc">Obstacle 6: Recreate the Lego block</div>
+            </div>
+          </div>
+          <div class="gallery-box">
+            <div class="gallery-img">
+              <a href="./images/obs9.webp">
+                <img
+                  src="./images/obs9.webp"
+                  alt="gallery-image"
+                  width="300px" height="220px" class="lazy-load-image"
+                  
+                />
+              </a>
+              <div class="desc">Obstacle 7: Lime and spoon</div>
+            </div>
+          </div>
+          <div class="gallery-box">
+            <div class="gallery-img">
+              <a href="./images/obs8.webp">
+                <img
+                  src="./images/obs8.webp"
+                  alt="gallery-image"
+                  width="300px" height="220px" class="lazy-load-image"
+                  
+                />
+              </a>
+              <div class="desc">Obstacle 8: Score a goal</div>
+            </div>
+          </div>
+          <div class="gallery-box">
+            <div class="gallery-img">
+              <a href="./images/obs10.webp">
+                <img
+                  src="./images/obs10.webp"
+                  alt="gallery-image"
+                  width="300px" height="220px" class="lazy-load-image"
+                  
+                />
+              </a>
+              <div class="desc">
+                Obstacle 9: Colour match the cones and balls
+              </div>
+            </div>
+          </div>
+          <div class="gallery-box">
+            <div class="gallery-img">
+              <a href="./images/obs4.webp">
+                <img
+                  src="./images/obs4.webp"
+                  alt="gallery-image"
+                  width="300px" height="220px" class="lazy-load-image"
+                  
+                />
+              </a>
+              <div class="desc">Obstacle 10: Treasure hunt in balloon pool</div>
+            </div>
+          </div>
+          <div class="gallery-box">
+            <div class="gallery-img">
+              <a href="./images/obs11.webp">
+                <img
+                  src="./images/obs11.webp"
+                  alt="gallery-image"
+                  width="300px" height="220px" class="lazy-load-image"
+                  
+                />
+              </a>
+              <div class="desc">Sweet finish! Found the treasure</div>
+            </div>
+          </div>
+          <div class="gallery-box">
+            <div class="gallery-img">
+              <a href="./images/obs12.webp">
+                <img
+                  src="./images/obs12.webp"
+                  alt="gallery-image"
+                  width="300px" height="220px" class="lazy-load-image"
+                  
+                />
+              </a>
+              <div class="desc">Is that going in?</div>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+      <div class="gallery-item" data-groups='["funLearning"]'>
+        <div class="gallery-container">
+          <div class="gallery-box">
+            <div class="gallery-img">
+              <a href="./images/lif1.webp">
+                <img
+                  src="./images/lif1.webp"
+                  alt="gallery-image"
+                  width="300px" height="220px" class="lazy-load-image"
+                  
+                />
+              </a>
+              <div class="desc">Learning with picture cards</div>
+            </div>
+          </div>
+          <div class="gallery-box">
+            <div class="gallery-img">
+              <a href="./images/hg2.webp">
+                <img
+                  src="./images/hg2.webp"
+                  alt="gallery-image"
+                  width="300px" height="220px" class="lazy-load-image"
+                  
+                />
+              </a>
+              <div class="desc">Learning numbers</div>
+            </div>
+          </div>
+          <div class="gallery-box">
+            <div class="gallery-img">
+              <a href="./images/lif3.webp">
+                <img
+                  src="./images/lif3.webp"
+                  alt="gallery-image"
+                  width="300px" height="220px" class="lazy-load-image"
+                  
+                />
+              </a>
+              <div class="desc">Learning numbers</div>
+            </div>
+          </div>
+          <div class="gallery-box">
+            <div class="gallery-img">
+              <a href="./images/lif4.webp">
+                <img
+                  src="./images/lif4.webp"
+                  alt="gallery-image"
+                  width="300px" height="220px" class="lazy-load-image"
+                  
+                />
+              </a>
+              <div class="desc">Express yourself without a pencil</div>
+            </div>
+          </div>
+          <div class="gallery-box">
+            <div class="gallery-img">
+              <a href="./images/lif5.webp">
+                <img
+                  src="./images/lif5.webp"
+                  alt="gallery-image"
+                  width="300px" height="220px" class="lazy-load-image"
+                  
+                />
+              </a>
+              <div class="desc">Solving puzzles</div>
+            </div>
+          </div>
+          <div class="gallery-box">
+            <div class="gallery-img">
+              <a href="./images/hg5.webp">
+                <img
+                  src="./images/hg5.webp"
+                  alt="gallery-image"
+                  width="300px" height="220px" class="lazy-load-image"
+                  
+                />
+              </a>
+              <div class="desc">Solving puzzles</div>
+            </div>
+          </div>
+          <div class="gallery-box">
+            <div class="gallery-img">
+              <a href="./images/lif7.webp">
+                <img
+                  src="./images/lif7.webp"
+                  alt="gallery-image"
+                  width="300px" height="220px" class="lazy-load-image"
+                  
+                />
+              </a>
+              <div class="desc">Counting exercise</div>
+            </div>
+          </div>
+          <div class="gallery-box">
+            <div class="gallery-img">
+              <a href="./images/lif8.webp">
+                <img
+                  src="./images/lif8.webp"
+                  alt="gallery-image"
+                  width="300px" height="220px" class="lazy-load-image"
+                  
+                />
+              </a>
+              <div class="desc">Counting exercise</div>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+      <div class="gallery-item" data-groups='["natureExploration"]'>
+        <div class="gallery-container">
+          <div class="gallery-box">
+            <div class="gallery-img">
+              <a href="./images/ne1.webp">
+                <img
+                  src="./images/ne1.webp"
+                  alt="gallery-image"
+                  width="300px" height="220px" class="lazy-load-image"
+                  
+                />
+              </a>
+              <div class="desc">
+                The kids witness palm kernel oil processing
+              </div>
+            </div>
+          </div>
+          <div class="gallery-box">
+            <div class="gallery-img">
+              <a href="./images/ne2.webp">
+                <img
+                  src="./images/ne2.webp"
+                  alt="gallery-image"
+                  width="300px" height="220px" class="lazy-load-image"
+                  
+                />
+              </a>
+              <div class="desc">A starfruit</div>
+            </div>
+          </div>
+          <div class="gallery-box">
+            <div class="gallery-img">
+              <a href="./images/ne4.webp">
+                <img
+                  src="./images/ne4.webp"
+                  alt="gallery-image"
+                  width="300px" height="220px" class="lazy-load-image"
+                  
+                />
+              </a>
+              <div class="desc">The kids are amazed by sea turtles</div>
+            </div>
+          </div>
+          <div class="gallery-box">
+            <div class="gallery-img">
+              <a href="./images/ne5.webp">
+                <img
+                  src="./images/ne5.webp"
+                  alt="gallery-image"
+                  width="300px" height="220px" class="lazy-load-image"
+                  
+                />
+              </a>
+              <div class="desc">The kids join in the harvesting of yams</div>
+            </div>
+          </div>
+          <div class="gallery-box">
+            <div class="gallery-img">
+              <a href="./images/ne7.webp">
+                <img
+                  src="./images/ne7.webp"
+                  alt="gallery-image"
+                  width="300px" height="220px" class="lazy-load-image"
+                  
+                />
+              </a>
+              <div class="desc">Pluck the cocoa pod</div>
+            </div>
+          </div>
+          <div class="gallery-box">
+            <div class="gallery-img">
+              <a href="./images/ne9.webp">
+                <img
+                  src="./images/ne9.webp"
+                  alt="gallery-image"
+                  width="300px" height="220px" class="lazy-load-image"
+                  
+                />
+              </a>
+              <div class="desc">Pawpaw tree</div>
+            </div>
+          </div>
+          <div class="gallery-box">
+            <div class="gallery-img">
+              <a href="./images/ne10.webp">
+                <img
+                  src="./images/ne10.webp"
+                  alt="gallery-image"
+                  width="300px" height="220px" class="lazy-load-image"
+                  
+                />
+              </a>
+              <div class="desc">Let's pluck some oranges</div>
+            </div>
+          </div>
+          <div class="gallery-box">
+            <div class="gallery-img">
+              <a href="./images/ne11.webp">
+                <img
+                  src="./images/ne11.webp"
+                  alt="gallery-image"
+                  width="300px" height="220px" class="lazy-load-image"
+                  
+                />
+              </a>
+              <div class="desc">A nice treat in the atmosphere's ambience</div>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+      <div class="gallery-item" data-groups='["easterEggHunt"]'>
+        <div class="gallery-container">
+          <div class="gallery-box">
+            <div class="gallery-img">
+              <a href="./images/eeh1.webp">
+                <img
+                  src="./images/eeh1.webp"
+                  alt="gallery-image"
+                  width="300px" height="220px" class="lazy-load-image"
+                  
+                />
+              </a>
+              <div class="desc">Prepping for the painting</div>
+            </div>
+          </div>
+          <div class="gallery-box">
+            <div class="gallery-img">
+              <a href="./images/eeh2.webp">
+                <img
+                  src="./images/eeh2.webp"
+                  alt="gallery-image"
+                  width="300px" height="220px" class="lazy-load-image"
+                  
+                />
+              </a>
+              <div class="desc">Found an egg</div>
+            </div>
+          </div>
+          <div class="gallery-box">
+            <div class="gallery-img">
+              <a href="./images/eeh3.webp">
+                <img
+                  src="./images/eeh3.webp"
+                  alt="gallery-image"
+                  width="300px" height="220px" class="lazy-load-image"
+                  
+                />
+              </a>
+              <div class="desc">Found an egg</div>
+            </div>
+          </div>
+          <div class="gallery-box">
+            <div class="gallery-img">
+              <a href="./images/eeh4.webp">
+                <img
+                  src="./images/eeh4.webp"
+                  alt="gallery-image"
+                  width="300px" height="220px" class="lazy-load-image"
+                  
+                />
+              </a>
+              <div class="desc">Egg hunt</div>
+            </div>
+          </div>
+          <div class="gallery-box">
+            <div class="gallery-img">
+              <a href="./images/eeh5.webp">
+                <img
+                  src="./images/eeh5.webp"
+                  alt="gallery-image"
+                  width="300px" height="220px" class="lazy-load-image"
+                  
+                />
+              </a>
+              <div class="desc">Painted Easter eggs</div>
+            </div>
+          </div>
+          <div class="gallery-box">
+            <div class="gallery-img">
+              <a href="./images/eeh6.webp">
+                <img
+                  src="./images/eeh6.webp"
+                  alt="gallery-image"
+                  width="300px" height="220px" class="lazy-load-image"
+                  
+                />
+              </a>
+              <div class="desc">Egg painting</div>
+            </div>
+          </div>
+          <div class="gallery-box">
+            <div class="gallery-img">
+              <a href="./images/eeh7.webp">
+                <img
+                  src="./images/eeh7.webp"
+                  alt="gallery-image"
+                  width="300px" height="220px" class="lazy-load-image"
+                  
+                />
+              </a>
+              <div class="desc">Egg painting</div>
+            </div>
+          </div>
+          <div class="gallery-box">
+            <div class="gallery-img">
+              <a href="./images/eeh8.webp">
+                <img
+                  src="./images/eeh8.webp"
+                  alt="gallery-image"
+                  width="300px" height="220px" class="lazy-load-image"
+                  
+                />
+              </a>
+              <div class="desc">Egg painting</div>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+      <div class="gallery-item" data-groups='["valentinesDay"]'>
+        <div class="gallery-container">
+          <div class="gallery-box">
+            <div class="gallery-img">
+              <a href="./images/val1.webp">
+                <img
+                  src="./images/val1.webp"
+                  alt="gallery-image"
+                  width="300px" height="220px" class="lazy-load-image"
+                  
+                />
+              </a>
+              <div class="desc">Red 'n' White -- Love 'n' Light</div>
+            </div>
+          </div>
+          <div class="gallery-box">
+            <div class="gallery-img">
+              <a href="./images/val2.webp">
+                <img
+                  src="./images/val2.webp"
+                  alt="gallery-image"
+                  width="300px" height="220px" class="lazy-load-image"
+                  
+                />
+              </a>
+              <div class="desc">Exchange of gifts</div>
+            </div>
+          </div>
+          <div class="gallery-box">
+            <div class="gallery-img">
+              <a href="./images/val3.webp">
+                <img
+                  src="./images/val3.webp"
+                  alt="gallery-image"
+                  width="300px" height="220px" class="lazy-load-image"
+                  
+                />
+              </a>
+              <div class="desc">Exchange of gifts</div>
+            </div>
+          </div>
+          <div class="gallery-box">
+            <div class="gallery-img">
+              <a href="./images/val4.webp">
+                <img
+                  src="./images/val4.webp"
+                  alt="gallery-image"
+                  width="300px" height="220px" class="lazy-load-image"
+                  
+                />
+              </a>
+              <div class="desc">Exchange of gifts</div>
+            </div>
+          </div>
+          <div class="gallery-box">
+            <div class="gallery-img">
+              <a href="./images/val5.webp">
+                <img
+                  src="./images/val5.webp"
+                  alt="gallery-image"
+                  width="300px" height="220px" class="lazy-load-image"
+                  
+                />
+              </a>
+              <div class="desc">Exchange of gifts</div>
+            </div>
+          </div>
+          <div class="gallery-box">
+            <div class="gallery-img">
+              <a href="./images/val6.webp">
+                <img
+                  src="./images/val6.webp"
+                  alt="gallery-image"
+                  width="300px" height="220px" class="lazy-load-image"
+                  
+                />
+              </a>
+              <div class="desc">Exchange of gifts</div>
+            </div>
+          </div>
+          <div class="gallery-box">
+            <div class="gallery-img">
+              <a href="./images/val7.webp">
+                <img
+                  src="./images/val7.webp"
+                  alt="gallery-image"
+                  width="300px" height="220px" class="lazy-load-image"
+                  
+                />
+              </a>
+              <div class="desc">Exchange of gifts</div>
+            </div>
+          </div>
+          <div class="gallery-box">
+            <div class="gallery-img">
+              <a href="./images/val8.webp">
+                <img
+                  src="./images/val8.webp"
+                  alt="gallery-image"
+                  width="300px" height="220px" class="lazy-load-image"
+                  
+                />
+              </a>
+              <div class="desc">Exchange of gifts</div>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+    </div>
+
+    <section>
+      <div class="welcome">
+        <div class="welcome-text">
+          <div class="welcome-text-heading">
+            <p>Interested in enrolling?</p>
+          </div>
+          <div class="welcome-btn">
+            <a href="enrol.html" class="facility-btn"
+              >Enrol Now <i class="fas fa-chevron-right"></i
+            ></a>
+          </div>
+        </div>
+    </section>
+
+    <a href="#"><i class="fas fa-arrow-up"></i></a>
+    <!-------------- footer  ---------------------->
+    <section class="footer">
+      <div class="contact-icons">
+        <a href="tel:+2348171520602"><i class="fas fa-phone-alt"></i></a>
+        <a href="https://wa.me/+2348171520602" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href=""><i class="far fa-envelope"></i></a>
+      </div>
+      <div class="footer-text">
+        <p class="copyright">&#169; 2023 - All Rights Reserved</p>
+        <p class="designer">Designed by
+          <a href="https://wa.me/+2348171520602"
+            >adegbolatolase</a
+          ></p>
+      </div>
+    </section>
+  </main>
+
+    <script src="./shuffle.min.js"></script>
+    <script src="./gallery-script.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

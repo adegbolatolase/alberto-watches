@@ -1,0 +1,88 @@
+.products-header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(./images/hugo-delauney-nKAJyiYfXuM-unsplash.jpg);
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+.gallery-item {
+  margin: 10px;
+  opacity: 0;
+}
+.category-buttons {
+  margin: 10px auto 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+}
+.category-buttons button{
+  background-color: transparent;
+  line-height: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #a3a28b;
+  border: none;
+  border-bottom: 6px solid #a3a28b;
+  border-radius: 6px;
+  white-space: nowrap;
+  letter-spacing: 0px;
+  padding: 4px 10px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.category-buttons button:hover {
+  color: #fd4381;
+  border-color: #fd4381;
+}
+.category-buttons button.active {
+  color: #fd4381;
+  border-color: #fd4381;
+}
+.gallery-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; 
+}
+.category-select {
+  text-align: center;
+  color: #777;
+}
+.category-select label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  text-align: center;
+  color: #fd4381;
+}
+.category-select select {
+  width: 200px;
+  margin: 0 auto;
+  display: block;
+}
+select {
+  color: #fd4381; 
+  border: 2px solid #fd4381; 
+  background: transparent;
+  padding: 8px;
+  border-radius: 8px;
+}
+select option {
+  color: #fd4381;
+  background: transparent
+}
+select:focus {
+  outline: none;
+  box-shadow: 0 0 5px #fd4381; 
+}
+@media screen and (min-width: 768px) {
+  .category-select {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .category-buttons {
+    display: none;
+  }
+}

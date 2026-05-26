@@ -1,0 +1,180 @@
+.tech-header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url(./images/hugo-delauney-nKAJyiYfXuM-unsplash.jpg);
+}
+.img {
+    width: 100%;
+    height: 600px;
+}
+
+#timeContainer h2 {
+    margin: 20px 0;
+    font-size: 40px;
+}
+.design{
+    padding: 20px;
+}
+
+.design h2 {
+    margin: 30px 0 20px;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.design p {
+    color: gray;
+    margin-bottom: 30px;
+}
+
+#name {
+    margin: 0 0 40px;
+}
+
+.citeContainer {
+    padding: 20px 0 0;
+    color: gray;
+}
+
+.last {
+    margin: 20px 10px;
+    padding-bottom: 70px;
+    color: gray;
+    border-bottom: 1px solid black;
+}
+
+.last span {
+    color: teal;
+}
+
+.socials {
+    padding: 0 20px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}  
+
+.imgContainer {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+@media only screen and (min-width:765px) {
+   #timeContainer {
+    font-size: 18px;
+    text-align: left;
+    margin: 70px 170px;
+    font-size: 25px;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+   }
+
+   #time {
+    padding: 0 0 15px;
+    font-size: 15px;
+   }
+
+   #name {
+    font-size: 16px;
+   }
+
+   #timeContainer h2 {
+    margin: 40px 0 30px;
+   }
+
+   .one, footer {
+    padding: 50px 200px;
+   }
+
+   .flat {
+    padding: 50px 100px;
+    width: 400px;
+   }
+
+   .two {
+    display: flex;
+    align-items: self-start;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px 80px;
+   }
+
+   .wordContainer {
+    width: 300px;
+   }
+
+   .img {
+    width: 300px;
+   }
+
+   .reverse {
+    flex-direction: row-reverse;
+   }
+}
+
+@media only screen and (min-width: 1020px) {
+    .one, footer {
+        padding: 50px 300px;
+       }
+
+    .two {
+        gap: 50px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+    .design h2 {
+        font-size: 40px;
+        line-height: 40px;
+    }
+    .wordContainer {
+        width: 100%;
+        max-width: 800px;
+        max-width: 900px;
+    }
+    .img {
+        width: 100%;
+        max-width: 1000px;
+        height: 450px;
+    }
+    .imgContainer {
+        text-align: center;
+    }
+    .bgImg {
+        width: 1000px;
+        height: 800px;
+    }
+}
+
+@media only screen and (min-width: 1435px) {
+    .one, footer {
+        padding: 50px 450px;
+       }
+       .flat {
+        padding: 50px 300px;
+        width: 700px;
+       }
+       .wordContainer {
+            width: 500px;
+       }
+       .wordContainer p {
+        line-height: 33px;
+       }
+       .two {
+        gap: 150px;
+       }
+}
+
+@media only screen and (min-width: 2563px) {
+    #time {
+        font-size: 100px;
+    }
+    .design h2 {
+        font-size: 130px;
+    }
+}

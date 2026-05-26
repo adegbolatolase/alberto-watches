@@ -1,0 +1,103 @@
+.store-header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(./images/hugo-delauney-nKAJyiYfXuM-unsplash.jpg);
+}
+.store-locator {
+  display: flex;
+  justify-content: space-around;
+  /* align-items: center; */
+  margin: 10px;
+}
+#address-list {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  /* height: 80vh; */
+  /* overflow-y: scroll; */
+}
+.contact {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.address-item {
+  margin: 15px;
+  padding: 10px;
+  box-shadow: 0 0 10px grey;
+  border-radius: 10px;
+  align-items: center;
+}
+.contact span {
+  font-size: 2rem;
+  color: #909090;
+}
+.contact h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-top: 8px;
+  margin-left: 8px;
+}
+.address-text {
+  height: 65px;
+  line-height: 20px;
+}
+.address-text h3 {
+  font-size: 1rem;
+  color: #454545;
+}
+.base {
+  display: flex;
+  justify-content: space-between;
+}
+#map {
+  width: 65%;
+  border-radius: 20px;
+  height: 600px;
+  margin: 10px;
+}
+.locate-button-container button {
+ padding: 5px;
+ border-radius: 10px;
+}
+.base img {
+  height: 30px;
+  width: 30px;
+}
+
+@media (max-width: 900px) {
+  .store-locator {
+    flex-direction: column;
+    margin: 20px auto;
+    align-items: center;
+  }
+  #address-list {
+    flex-direction: row;
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+  #map {
+    width: 95%;
+    margin: 30px auto 0;
+    height: 50vh;
+  }
+  #address-list::-webkit-scrollbar {
+    height: 5px;
+  }
+#address-list::-webkit-scrollbar-track {
+  background-color: black;
+}
+#address-list::-webkit-scrollbar-thumb {
+  background-color: #fd4381 !important;
+}
+  #address-list {
+    width: 95%;
+    margin: auto;
+    height: 20vh;
+  }
+  .address-item {
+    min-width: 250px;
+  }
+  .address-text {
+    height: 80px;
+  }
+}

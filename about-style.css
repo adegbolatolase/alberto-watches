@@ -1,0 +1,61 @@
+.about-header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(./images/hugo-delauney-nKAJyiYfXuM-unsplash.jpg);
+}
+.grid-2-cols img {
+  width: 100%;
+}
+.container {
+  max-width: 960px;
+  margin: 20px auto;
+}
+.grid-2-cols {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 80px;
+}
+.about-us-box p {
+  margin-bottom: 24px;
+  font-size: 18px;
+  line-height: 1.7;
+}
+.about-us-box p.bold {
+  font-weight: 500;
+}
+.about-us-box h2 {
+  margin-bottom: 32px;
+  font-size: 44px;
+  letter-spacing: -1px;
+}
+.about-feature {
+  display: flex;
+  gap: 30px;
+}
+.about-feature-heading {
+  color: #f50f0f;
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+.about-feature-paragraph {
+  font-size: 7px;
+  line-height: 0.7px;
+}
+.about-features-icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 24px;
+}
+@media screen and (max-width: 767px) {
+  .grid-2-cols {
+    grid-template-columns: 1fr;
+  }
+  .about-feature {
+    flex-direction: column;
+  }
+  .container {
+    padding: 20px;
+  }
+  .about-us-box {
+    text-align: center;
+  }
+}

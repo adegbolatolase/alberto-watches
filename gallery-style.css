@@ -1,0 +1,118 @@
+@import './global.css';
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  opacity: 1;
+}
+.gallery-item {
+  margin: 10px;
+  opacity: 0;
+}
+.category-buttons {
+  margin: 10px auto 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+}
+.category-buttons button{
+  background-color: transparent;
+  line-height: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #a3a28b;
+  border: none;
+  border-bottom: 6px solid #a3a28b;
+  border-radius: 6px;
+  white-space: nowrap;
+  letter-spacing: 0px;
+  padding: 4px 10px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.category-buttons button:hover {
+  color: #fe6500;
+  border-color: #fe6500;
+}
+.category-buttons button.active {
+  color: #fe6500;
+  border-color: #fe6500;
+}
+.gallery-header {
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(../images/20230417_090657.webp);
+}
+div.gallery-img {
+  border: 1px solid #ccc;
+}
+div.gallery-img:hover {
+  border: 1px solid #777;
+}
+div.gallery-img img {
+  width: 100%;
+  height: 220px;
+}
+div.desc {
+  padding: 15px 0px;
+  text-align: center;
+  font-size: 13px;
+  font-weight: bold;
+  color: #159947;
+}
+.gallery-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; 
+}
+.gallery-box {
+  padding: 0 6px;
+  width: 300px;
+  margin: 0px auto 20px;
+}
+.category-select {
+  text-align: center;
+  color: #777;
+}
+.category-select label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  text-align: center;
+  color: #fe6500;
+}
+.category-select select {
+  width: 200px;
+  margin: 0 auto;
+  display: block;
+}
+select {
+  color: #fe6500; 
+  border: 2px solid #fe6500; 
+  background: transparent;
+  padding: 8px;
+  border-radius: 8px;
+}
+select option {
+  color: #fe6500;
+  background: transparent
+}
+select:focus {
+  outline: none;
+  box-shadow: 0 0 5px #fe6500; 
+}
+@media screen and (min-width: 768px) {
+  .category-select {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .category-buttons {
+    display: none;
+  }
+}
+
+
+
+
+  

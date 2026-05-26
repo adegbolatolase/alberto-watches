@@ -1,0 +1,42 @@
+<div class="sub-header products-header">
+  <h1>
+    PRODUCTS<br />
+    GALLERY
+  </h1>
+</div>
+<div class="filter-buttons">
+  <div class="category-select">
+    <label for="category-select">Select a category:</label>
+    <select id="category-select">
+      <option value="Vintage">Vintage</option>
+      <option value="Luxury">Luxury</option>
+      <option value="SmartWatches">Smart watches</option>
+      <option value="Sports">Sports</option>
+      <option value="LimitedEdition">Limited Edition</option>
+    </select>
+  </div>
+  <div class="category-buttons">
+    <button class="gallery-btn active" data-group="Vintage">Vintage</button>
+    <button class="gallery-btn" data-group="Luxury">Luxury</button>
+    <button class="gallery-btn" data-group="SmartWatches">Smart watches</button>
+    <button class="gallery-btn" data-group="Sports">Sports</button>
+    <button class="gallery-btn" data-group="LimitedEdition">
+      Limited Edition
+    </button>
+  </div>
+</div>
+
+<div class="gallery">
+  <div class="gallery-item" data-groups='["Vintage"]'></div>
+  <div class="gallery-item" data-groups='["Luxury"]'></div>
+  <div class="gallery-item" data-groups='["SmartWatches"]'></div>
+  <div class="gallery-item" data-groups='["Sports"]'></div>
+  <div class="gallery-item" data-groups='["LimitedEdition"]'></div>
+</div>
+
+<div class="popup-container" id="popupContainer2">
+  <div class="popup">
+    <span class="close-btn" id="closeBtn2">&times;</span>
+    <div id="popupContent2"></div>
+  </div>
+</div>

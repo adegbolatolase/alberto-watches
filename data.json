@@ -1,0 +1,280 @@
+{
+  "NewArrivals": [
+    {
+      "image": "./images/RolexGMT.webp",
+      "name": "Rolex GMT-Master II",
+      "price": "$199",
+      "description": "A timeless classic with a stainless steel case and genuine leather strap. The chronograph function adds versatility, making it perfect for both casual and formal occasions.",
+      "details": [
+        { "label": "Color", "value": "Silver" },
+        { "label": "Movement", "value": "Quartz" },
+        { "label": "Water Resistance", "value": "30 meters" }
+      ]
+    },
+    {
+      "image": "./images/bulovaaccutron.jpg",
+      "name": "BULOVA Accutron II ",
+      "price": "$249",
+      "description": "Designed for adventure seekers, this sports diver watch features a rugged stainless steel case and a high-visibility dial. It's water-resistant up to 100 meters, making it ideal for water activities and outdoor sports.",
+      "details": [
+        { "label": "Color", "value": "Black" },
+        { "label": "Movement", "value": "Automatic" },
+        { "label": "Water Resistance", "value": "100 meters" }
+      ]
+    },
+    {
+      "image": "./images/casiosmart.avif",
+      "name": "Casio G-SQUAD - GSW-H1000",
+      "price": "$299",
+      "description": "The ultimate fusion of style and technology. This modern smartwatch offers fitness tracking, heart rate monitoring, and notifications from your smartphone. The sleek design and customizable watch faces make it a must-have accessory.",
+      "details": [
+        { "label": "Color", "value": "Red" },
+        { "label": "Technology", "value": "Smartwatch Technology" },
+        {
+          "label": "Features",
+          "value": [
+            "Fitness Tracking",
+            "Heart Rate Monitoring",
+            "Notifications"
+          ]
+        },
+        { "label": "Compatibility", "value": "iOS and Android" }
+      ]
+    },
+    {
+      "image": "./images/SeikoSKX007K1.jpg",
+      "name": "Seiko SKX007",
+      "price": "$189",
+      "description": "Inspired by aviators of the past, this watch exudes a sense of adventure. It features a large pilot-style dial with luminous hands and markers for easy reading in low-light conditions. Perfect for aviation enthusiasts and world travelers.",
+      "details": [
+        { "label": "Color", "value": "Dark Grey" },
+        { "label": "Movement", "value": "Automatic" },
+        { "label": "Water Resistance", "value": "50 meters" }
+      ]
+    },
+    {
+      "image": "./images/cartiertank.webp",
+      "name": "Tank Louis Cartier",
+      "price": "$799",
+      "description": "Experience timeless elegance with this Cartier timepiece. The stainless steel case and luxurious leather strap speak of sophistication. A perfect accessory for any formal occasion.",
+      "details": [
+        { "label": "Color", "value": "Silver" },
+        { "label": "Movement", "value": "Quartz" },
+        { "label": "Water Resistance", "value": "50 meters" }
+      ]
+    },
+    {
+      "image": "./images/michaelkorswatch-removebg-preview.png",
+      "name": "Michael Kors Oversized Slim Runway",
+      "price": "$349",
+      "description": "Make a statement with this glamorous Michael Kors watch. The rose gold-tone case and sparkling crystal accents add a touch of luxury. Ideal for those who love to stand out.",
+      "details": [
+        { "label": "Color", "value": "Blue" },
+        { "label": "Movement", "value": "Quartz" },
+        { "label": "Water Resistance", "value": "50 meters" }
+      ]
+    },
+    {
+      "image": "./images/tissotclassic.jpg",
+      "name": "Tissot T-Classic Everytime",
+      "price": "$349",
+      "description": "Embrace classic elegance with the Tissot Classic Tradition. The sleek stainless steel design and simple dial exude sophistication. A timeless piece for every watch enthusiast.",
+      "details": [
+        { "label": "Color", "value": "Rose Gold" },
+        { "label": "Movement", "value": "Quartz" },
+        { "label": "Water Resistance", "value": "30 meters" }
+      ]
+    },
+    {
+      "image": "./images/citizeneco.webp",
+      "name": "Citizen Watch Eco Drive Divers",
+      "price": "$269",
+      "description": "Stay eco-friendly with the Citizen Eco-Drive watch, powered by light. The stainless steel case and bracelet offer durability and style. A sustainable choice for the modern watch lover.",
+      "details": [
+        { "label": "Color", "value": "Blue" },
+        { "label": "Movement", "value": "Eco-Drive" },
+        { "label": "Water Resistance", "value": "100 meters" }
+      ]
+    }
+  ],
+  "Vintage": [
+    {
+      "image": "./images/RolexGMT.webp",
+      "name": "Vintage Watch 1",
+      "price": "$299",
+      "description": "Embrace the charm of the past with this exquisite vintage timepiece...",
+      "details": [
+        { "label": "Color", "value": "Gold" },
+        { "label": "Movement", "value": "Automatic" },
+        { "label": "Water Resistance", "value": "30 meters" }
+      ]
+    },
+    {
+      "image": "./images/RolexGMT.webp",
+      "name": "Vintage Watch 2",
+      "price": "$249",
+      "description": "Experience classic elegance with this timeless vintage watch...",
+      "details": [
+        { "label": "Color", "value": "Silver" },
+        { "label": "Movement", "value": "Manual" },
+        { "label": "Water Resistance", "value": "20 meters" }
+      ]
+    },
+    {
+      "image": "./images/RolexGMT.webp",
+      "name": "Vintage Watch 3",
+      "price": "$199",
+      "description": "Step back in time with this beautifully crafted vintage timepiece...",
+      "details": [
+        { "label": "Color", "value": "Bronze" },
+        { "label": "Movement", "value": "Mechanical" },
+        { "label": "Water Resistance", "value": "10 meters" }
+      ]
+    },
+    {
+      "image": "./images/RolexGMT.webp",
+      "name": "Vintage Watch 4",
+      "price": "$349",
+      "description": "Elevate your style with this unique and sophisticated vintage watch...",
+      "details": [
+        { "label": "Color", "value": "Black" },
+        { "label": "Movement", "value": "Automatic" },
+        { "label": "Water Resistance", "value": "30 meters" }
+      ]
+    },
+    {
+      "image": "./images/RolexGMT.webp",
+      "name": "Vintage Watch 5",
+      "price": "$299",
+      "description": "Experience the elegance of a bygone era with this vintage masterpiece...",
+      "details": [
+        { "label": "Color", "value": "Silver" },
+        { "label": "Movement", "value": "Manual" },
+        { "label": "Water Resistance", "value": "20 meters" }
+      ]
+    },
+    {
+      "image": "./images/RolexGMT.webp",
+      "name": "Vintage Watch 6",
+      "price": "$249",
+      "description": "A classic vintage watch that exudes timeless beauty and sophistication...",
+      "details": [
+        { "label": "Color", "value": "Gold" },
+        { "label": "Movement", "value": "Mechanical" },
+        { "label": "Water Resistance", "value": "10 meters" }
+      ]
+    },
+    {
+      "image": "./images/RolexGMT.webp",
+      "name": "Vintage Watch 7",
+      "price": "$399",
+      "description": "Make a statement with this exquisite vintage watch that captures the essence of the past...",
+      "details": [
+        { "label": "Color", "value": "Bronze" },
+        { "label": "Movement", "value": "Automatic" },
+        { "label": "Water Resistance", "value": "30 meters" }
+      ]
+    },
+    {
+      "image": "./images/RolexGMT.webp",
+      "name": "Vintage Watch 8",
+      "price": "$329",
+      "description": "A true masterpiece of craftsmanship and design, this vintage watch stands out with its elegance...",
+      "details": [
+        { "label": "Color", "value": "Silver" },
+        { "label": "Movement", "value": "Manual" },
+        { "label": "Water Resistance", "value": "20 meters" }
+      ]
+    }
+  ],
+  "Luxury": [
+    {
+      "image": "./images/RolexGMT.webp",
+      "name": "Vintage Watch 1",
+      "price": "$299",
+      "description": "Embrace the charm of the past with this exquisite vintage timepiece...",
+      "details": [
+        { "label": "Color", "value": "Gold" },
+        { "label": "Movement", "value": "Automatic" },
+        { "label": "Water Resistance", "value": "30 meters" }
+      ]
+    },
+    {
+      "image": "./images/RolexGMT.webp",
+      "name": "Vintage Watch 2",
+      "price": "$249",
+      "description": "Experience classic elegance with this timeless vintage watch...",
+      "details": [
+        { "label": "Color", "value": "Silver" },
+        { "label": "Movement", "value": "Manual" },
+        { "label": "Water Resistance", "value": "20 meters" }
+      ]
+    },
+    {
+      "image": "./images/RolexGMT.webp",
+      "name": "Vintage Watch 3",
+      "price": "$199",
+      "description": "Step back in time with this beautifully crafted vintage timepiece...",
+      "details": [
+        { "label": "Color", "value": "Bronze" },
+        { "label": "Movement", "value": "Mechanical" },
+        { "label": "Water Resistance", "value": "10 meters" }
+      ]
+    },
+    {
+      "image": "./images/RolexGMT.webp",
+      "name": "Vintage Watch 4",
+      "price": "$349",
+      "description": "Elevate your style with this unique and sophisticated vintage watch...",
+      "details": [
+        { "label": "Color", "value": "Black" },
+        { "label": "Movement", "value": "Automatic" },
+        { "label": "Water Resistance", "value": "30 meters" }
+      ]
+    },
+    {
+      "image": "./images/RolexGMT.webp",
+      "name": "Vintage Watch 5",
+      "price": "$299",
+      "description": "Experience the elegance of a bygone era with this vintage masterpiece...",
+      "details": [
+        { "label": "Color", "value": "Silver" },
+        { "label": "Movement", "value": "Manual" },
+        { "label": "Water Resistance", "value": "20 meters" }
+      ]
+    },
+    {
+      "image": "./images/RolexGMT.webp",
+      "name": "Vintage Watch 6",
+      "price": "$249",
+      "description": "A classic vintage watch that exudes timeless beauty and sophistication...",
+      "details": [
+        { "label": "Color", "value": "Gold" },
+        { "label": "Movement", "value": "Mechanical" },
+        { "label": "Water Resistance", "value": "10 meters" }
+      ]
+    },
+    {
+      "image": "./images/RolexGMT.webp",
+      "name": "Vintage Watch 7",
+      "price": "$399",
+      "description": "Make a statement with this exquisite vintage watch that captures the essence of the past...",
+      "details": [
+        { "label": "Color", "value": "Bronze" },
+        { "label": "Movement", "value": "Automatic" },
+        { "label": "Water Resistance", "value": "30 meters" }
+      ]
+    },
+    {
+      "image": "./images/RolexGMT.webp",
+      "name": "Vintage Watch 8",
+      "price": "$329",
+      "description": "A true masterpiece of craftsmanship and design, this vintage watch stands out with its elegance...",
+      "details": [
+        { "label": "Color", "value": "Silver" },
+        { "label": "Movement", "value": "Manual" },
+        { "label": "Water Resistance", "value": "20 meters" }
+      ]
+    }
+  ]
+}

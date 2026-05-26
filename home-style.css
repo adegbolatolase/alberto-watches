@@ -1,0 +1,354 @@
+.carousel-item img {
+  max-height: 85vh;
+  margin-top: 3px;
+}
+.carousel-indicators [data-bs-target] {
+  height: 15px;
+  border: 2px solid white;
+  width: 15px;
+  background-color: inherit;
+  border-radius: 50%;
+}
+.carousel-indicators .active {
+    border: 2px solid transparent;
+    background-color: #fff;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 5vh;
+  height: 5vh;
+  color: white;
+  background-color: black;
+  border-radius: 10px;
+}
+.carousel-control-next-icon {
+  position: absolute;
+  right: 0;
+  top: 45%;
+}
+.carousel-control-prev-icon {
+  position: absolute;
+  left: 0;
+  top: 45%;
+}
+.carousel-item {
+  transition: transform 2s ease-in-out;
+  position: relative;
+}
+
+.carousel-text,
+.carousel-text-left {
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+  transform: translateX(-50%);
+  padding: 10px 30px;
+  border-radius: 5px;
+  font-weight: bold;
+  opacity: 0; /* Initially set opacity to 0 for bounce-in animation */
+}
+
+.carousel-text h3 {
+  font-size: 2.5rem;
+  line-height: 50px;
+  font-weight: bold;
+  color: #fff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  -webkit-text-stroke: 2px black;
+}
+.carousel-item.active .carousel-text {
+  animation: bounceIn 1s forwards; /* Apply the bounce-in animation to the active carousel item's caption */
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: translateY(-500px); /* Initial position off the screen */
+    opacity: 0; /* Start with opacity 0 */
+  }
+  30% {
+    transform: translateY(20px); /* Bounce up */
+    opacity: 1; /* Make the text visible at 30% */
+  }
+  45% {
+    transform: translateY(-10px); /* Slightly bounce back */
+  }
+  60% {
+    transform: translateY(5px); /* Slightly bounce up */
+  }
+  75% {
+    transform: translateY(-2px); /* Slightly bounce back */
+  }
+  100% {
+    transform: translateY(0); /* Back to the original position */
+    opacity: 1; /* Fully visible */
+  }
+}
+
+/* Example element to apply the animation */
+.bounce-in {
+  animation: bounceIn 2s ease 0.5s forwards; /* Duration set to 2 seconds, delay set to 0.5 seconds, animation-fill-mode set to forwards */
+  opacity: 0; /* Set initial opacity to 0 */
+}
+
+.summary {
+  background-color: #000;
+  display: flex;
+  padding: 40px;
+  margin-top: 30px;
+  justify-content: space-between;
+  align-items: center;
+}
+.summary-text {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  font-family: inherit;
+  text-align: justify;
+  width: 70%;
+  font-size: 1.8rem;
+}
+.summary img {
+  height: 250px;
+  width: 300px;
+}
+.summary-text ul {
+  justify-content: space-between;
+  padding: 0;
+  font-size: 1rem;
+}
+.summary-text ul li {
+  width: 25%;
+  text-align: center;
+}
+.summary-text ul li:first-child {
+  text-align: left;
+}
+.summary-text ul.headlines li:not(:last-child) {
+  border-right: 4px solid #fff;
+}
+.our-creations {
+  position: relative;
+  margin: 6%;
+}
+.our-creations h2 {
+  margin-bottom: 50px;
+  font-size: 2.8rem;
+}
+.creations-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  place-content: center;
+  grid-gap: 30px;
+}
+.creations-card {
+  position: relative;
+  height: 450px;
+  cursor: pointer;
+}
+.creations-card img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+.creations-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+}
+.creations-card:hover::after {
+  background: linear-gradient(#fffa, #555a);
+}
+.creations-card h3 {
+  position: absolute;
+  bottom: 35px;
+  left: 40px;
+  font-size: 2rem;
+  color: white;
+  z-index: 1;
+}
+.creations-card:hover h3 {
+  color: black;
+}
+.creations-link {
+  justify-self: end;
+}
+.hero-btn {
+  position: absolute;
+  right: 0px;
+  top: 5px;
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  border: 2px solid black;
+  padding: 12px 20px;
+  background: transparent;
+  cursor: pointer;
+  letter-spacing: 4px;
+}
+.hero-btn:hover {
+  background-color: black;
+  color: white;
+}
+.store-location {
+  margin: 30px auto;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(images/storebkg3.png);
+  background-position: center;
+  background-position: cover;
+  text-align: center;
+  padding: 100px 0;
+  color: #fff;
+}
+.store-location h3 {
+  font-size: 2.7rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.store-location p {
+  max-inline-size: 700px;
+  margin: 20px auto 50px;
+  font-size: 1.25rem;
+}
+.store-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  border-radius: 20px;
+  font-weight: bold;
+  padding: 12px 20px;
+  cursor: pointer;
+  letter-spacing: 2px;
+}
+.store-btn:hover {
+  background-color: #fd4381;
+  color: white;
+}
+.testimonial {
+  padding: 10px 0 30px;
+  margin-top: 20px;
+}
+.testimonial .container {
+  max-width: 600px;
+  background-color: white;
+  padding: 0;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px #fd4381;
+}
+.testimonial .carousel-item {
+  padding: 110px 0;
+}
+.testimonial ul {
+  list-style: none;
+}
+.review {
+  font-size: 1.2rem;
+  color: #000;
+  text-align: center;
+  font-weight: bold;
+}
+.person {
+  color: #fd4381;
+  text-align: center;
+  font-weight: bold;
+}
+.stars {
+  margin: 5px auto 10px;
+}
+.stars i {
+  color: #ffd700;
+  font-size: 1.2rem;
+}
+.testimonial .carousel-inner {
+  max-width: 800px;
+}
+.testimonial .carousel-indicators {
+  bottom: -40px;
+  right: 0;
+  margin: 0;
+}
+.testimonial .heading h3 {
+  text-align: center;
+  margin: 20px;
+  font-weight: bold;
+  font-size: 2rem;
+}
+.testimonial .img-text {
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  padding: 0 20px;
+  width: 100%;
+}
+.testimonial .carousel-indicators [data-bs-target] {
+  height: 15px;
+  border: 2px solid #000;
+  width: 15px;
+  background-color: inherit;
+  border-radius: 50%;
+}
+.testimonial .carousel-indicators .active {
+  border: 2px solid transparent;
+  background-color: #fd4381;
+}
+.testimonial .left {
+  color: #000;
+  font-weight: 900;
+}
+.testimonial .right {
+  color: #000;
+  font-weight: 900;
+}
+.testimonial .carousel-control-next,
+.testimonial .carousel-control-prev {
+  position: relative;
+}
+.testimonial span.fas {
+  font-size: 2rem;
+}
+@media (max-width: 1024px) {
+  .carousel-text h3 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 900px) {
+  .summary {
+    flex-direction: column;
+  }
+  .summary-text {
+    width: 100%;
+  }
+  .summary-text ul {
+    flex-direction: column;
+    margin: 10px auto 20px;
+  }
+  .summary-text ul.headlines li:not(:last-child) {
+    border-right: none;
+  }
+  .summary-text ul li {
+    border-bottom: 2px solid #fff;
+    padding: 5px 0;
+    text-align: center;
+    width: 100%;
+  }
+}
+@media (max-width: 800px) {
+  .hero-btn {
+    position: static;
+    display: block;
+    width: max-content;
+    margin: 40px auto auto auto;
+  }
+  .store-location p {
+    padding: 0 20px;
+  }
+  .store-location h3 {
+    padding: 0 10px;
+  }
+  .carousel-text h3 {
+    display: none;
+  }
+}
